@@ -1,1 +1,1 @@
-# WeatherGaurd
+# WeatherGuard
