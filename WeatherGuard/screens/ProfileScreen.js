@@ -3,28 +3,37 @@ import React from 'react';
 import { Text, Image, StyleSheet } from 'react-native';
 import GradientBackground from '../components/GradientBackground';
 
-const logoURI = "https://your-logo-url.com/logo.png";
+
 
 const ProfileScreen = () => {
   return (
     <GradientBackground>
-      <Image source={{ uri: logoURI }} style={styles.logo} />
-      <Text style={styles.profileText}>Welcome, [User Name]</Text>
-      <Text style={styles.profileText}>Email: [User Email]</Text>
+      <Image source={require('../assets/dp.jpg')} style={styles.logo} />
+      <Text style={styles.profileText}>Ethyl Aguid</Text>
+      <Text style={styles.profileEmail} >aguid.ethyl110@gmail.com</Text>
     </GradientBackground>
   );
 };
 
 const styles = StyleSheet.create({
   logo: {
-    width: 100,
-    height: 100,
+    width: 200,
+    height: 200,
     marginBottom: 20,
+    borderRadius: 100,
+    borderWidth: 5,
   },
   profileText: {
     color: '#fff',
-    fontSize: 18,
+    fontSize: 30,
     marginTop: 15,
+    fontWeight: 'bold',
+  },
+  profileEmail: {
+    color: '#fff',
+    fontSize: 10,
+    marginTop: 5,
+    fontStyle: 'italic',
   },
 });
 
